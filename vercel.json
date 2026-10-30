@@ -1,0 +1,70 @@
+{
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/start-here",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/about#contact",
+      "permanent": true
+    },
+    {
+      "source": "/free-resources",
+      "destination": "/toolkit",
+      "permanent": true
+    },
+    {
+      "source": "/budgeting",
+      "destination": "/toolkit",
+      "permanent": true
+    },
+    {
+      "source": "/the-basics",
+      "destination": "/toolkit",
+      "permanent": true
+    },
+    {
+      "source": "/get-out-of-debt",
+      "destination": "/toolkit",
+      "permanent": true
+    },
+    {
+      "source": "/save-more-money",
+      "destination": "/toolkit",
+      "permanent": true
+    },
+    {
+      "source": "/store",
+      "destination": "/shop",
+      "permanent": true
+    },
+    {
+      "source": "/store/:path*",
+      "destination": "/shop",
+      "permanent": true
+    },
+    {
+      "source": "/blog.sherockfinances.com",
+      "destination": "/ledger",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}
